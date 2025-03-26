@@ -10,6 +10,12 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  preview: {
+    // Add the allowed host
+    allowedHosts: [
+      'juegos.upkey.cl'
+    ]
+  },
   server: {
     host: true, // o '0.0.0.0'
     port: 80,
